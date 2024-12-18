@@ -1,0 +1,13 @@
+1. install xampp (jika sudah start apache dan mysql)
+2. install navicat
+3. pindahkan folder source ke c://xampp/htdoc
+4. import database dengan yg ada di folder yg ber extention '.sql' menggunakan navicat
+5. rubah koneksi.php di folder source config/koneksi.php sesuai dengan settingan database masing-masing
+6. buka xampp di bagian apache klik config>php.ini
+7. cari tulisan short_open_tag = off lalu ubah dari kondisi off menjadi 'ON'
+8. restart apache dan mysqlnya
+9. buka browser masukan url localhost/nama folder sourcenya
+10. masuk dengan user=admin1234 pass=admin1234
+11. input data SKPD dan UKPD dan buat akun super user UKPD
+12. login ulang dengan user yg telah di buat.
+13. silakan di coba.

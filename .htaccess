@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [L]
+</IfModule>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mydomain.com$ [NC]
+RewriteRule ^(.*) http://www.mydomain.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteRule ^news/([^/]*)/([^/]*)/?$	/news.php?id=$2
+</IfModule>
+
